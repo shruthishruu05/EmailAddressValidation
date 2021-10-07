@@ -15,3 +15,9 @@ arguments.forEach(element =>
     {
     console.log("uc2" +element+": ", emailRegex.test(element));
 });
+
+emailRegex = RegExp("^[a-zA-Z][a-zA-Z]*[a-zA-Z0-9_-]*[a-z|A-Z|0-9](@)[a-zA-Z0-9]*(.)([a-z]{2,})$");
+arguments.forEach(element => 
+    {
+    console.log("uc3" +element+": ", emailRegex.test(element));
+});
